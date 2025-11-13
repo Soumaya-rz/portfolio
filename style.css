@@ -229,6 +229,11 @@ header {
     align-items: flex-start;
 }
 
+.description-projet p{
+    font-size: 14px;
+    font-weight: lighter;
+}
+
 .photo-galerie {
     display: flex;
     justify-content: center;

@@ -60,7 +60,7 @@ li a.active {
 header {
     display: flex;
     flex-direction: row;
-    padding: 40px 100px;
+    padding: 40px 150px;
     height: 70vh;
     align-items: center;
     justify-content: space-around;
@@ -117,15 +117,16 @@ header {
 }
 
 .photo-header img {
-    width: 30vw;
+    width: 100%;
     height: 60vh;
+    box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.2);
 }
 
 #services-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 64px 56px;
+    padding: 50px 56px;
     gap: 30px;
 }
 

@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
     <title>Portfolio</title>
 </head>
 
@@ -32,7 +36,9 @@
             <div class="description-header">
                 <h3>Clara Lenoir</h3>
                 <h1>Photographe</h1>
-                <p>Photographe passionnée, je capture l’instant avec créativité pour révéler l’émotion et la beauté. <br>Chaque image raconte une histoire unique, reflétant mon regard personnel.</p>
+                <p>Photographe passionnée, je capture l’instant avec créativité pour révéler l’émotion et la beauté.
+                    Chaque image raconte une histoire unique, reflétant mon regard personnel.
+                </p>
                 <a class="contact-link" href="#">Réserver une séance</a>
             </div>
 
@@ -43,8 +49,9 @@
 
         <section id="services-container">
             <article class="service-card">
-                <img src="assets/images/image-1.jpg" alt="service 1">
-
+                <div class="service-image">
+                    <img src="assets/images/image-1.jpg" alt="service 1">
+                </div>
                 <div class="description-service">
                     <h3>Portraits artistiques</h3>
                     <p>Des portraits uniques, réalisés en lumière naturelle ou en studio, pour exprimer
@@ -54,18 +61,21 @@
             </article>
 
             <article class="service-card">
-                <img src="assets/images/image-2.jpg" alt="service 2">
-
+                <div class="service-image">
+                    <img src="assets/images/image-2.jpg" alt="service 2">
+                </div>
                 <div class="description-service">
                     <h3>Photographie de mariage</h3>
-                    <p>Des clichés sincères et élégants qui retracent avec authenticité chaque instant de votre journée.</p>
+                    <p>Des clichés sincères et élégants qui retracent avec authenticité chaque instant de votre journée.
+                    </p>
                 </div>
 
             </article>
 
             <article class="service-card">
-                <img src="assets/images/image-5.jpg" alt="service 3">
-
+                <div class="service-image">
+                    <img src="assets/images/image-5.jpg" alt="service 3">
+                </div>
                 <div class="description-service">
                     <h3>Shooting professionnel</h3>
                     <p>Des photos de qualité pour vos profils, sites web et supports de communication.
@@ -79,7 +89,7 @@
             <div class="projets-container">
                 <article class="projet-card">
                     <div class="photo-galerie">
-                        <img src="assets/images/Image.png" alt="">
+                        <img src="assets/images/portrait-lumiere-naturelle.jpg" alt="portrait-lumiere-naturelle">
                     </div>
                     <div class="description-projet">
                         <h4>Portraits en lumière naturelle</h4>
@@ -89,17 +99,7 @@
 
                 <article class="projet-card">
                     <div class="photo-galerie">
-                        <img src="assets/images/Image-1.png" alt="">
-                    </div>
-                    <div class="description-projet">
-                        <h4>Corporate – Équipe NovaTech</h4>
-                        <p>Shooting professionnel</p>
-                    </div>
-                </article>
-
-                <article class="projet-card">
-                    <div class="photo-galerie">
-                        <img src="assets/images/Image-2.png" alt="">
+                        <img src="assets/images/mariage-ElodieMaxime.jpg" alt="mariage-ElodieMaxime">
                     </div>
                     <div class="description-projet">
                         <h4>Mariage d’Élodie & Maxime</h4>
@@ -109,17 +109,17 @@
 
                 <article class="projet-card">
                     <div class="photo-galerie">
-                        <img src="assets/images/Image-3.png" alt="">
+                        <img src="assets/images/photo-paysage.jpg" alt="photo-paysage">
                     </div>
                     <div class="description-projet">
-                        <h4>Portraits en lumière naturelle</h4>
-                        <p>portraits extérieur</p>
+                        <h4>Paysage</h4>
+                        <p></p>
                     </div>
                 </article>
 
                 <article class="projet-card">
                     <div class="photo-galerie">
-                        <img src="assets/images/Image-4.png" alt="">
+                        <img src="assets/images/ corporate.jpg" alt="corporate">
                     </div>
                     <div class="description-projet">
                         <h4>Corporate – Équipe NovaTech</h4>
@@ -129,11 +129,21 @@
 
                 <article class="projet-card">
                     <div class="photo-galerie">
-                        <img src="assets/images/Image-5.png" alt="">
+                        <img src="assets/images/photo-animaliere.jpg" alt="photo-animaliere">
+                    </div>
+                    <div class="description-projet">
+                        <h4>Photo animalière</h4>
+                        <p></p>
+                    </div>
+                </article>
+
+                <article class="projet-card">
+                    <div class="photo-galerie">
+                        <img src="assets/images/voyage-en-islande.jpg" alt="voyage-en-islande">
                     </div>
                     <div class="description-projet">
                         <h4>Voyage en Islande</h4>
-                        <p> Paysages majestueux</p>
+                        <p>Paysages majestueux</p>
                     </div>
                 </article>
             </div>
@@ -157,11 +167,12 @@
                 </article>
 
                 <article class="temoignage-card">
-                    <h5>" Un super moment passé en séance ! Clara met à l’aise et sait diriger sans forcer. Ce qui donne des portraits naturels et percutants. "</h5>
+                    <h5>" Un super moment passé en séance ! Clara met à l’aise et sait diriger sans forcer. Ce qui donne
+                        des portraits naturels et percutants. "</h5>
                     <div class="client">
                         <img src="assets/images/client-3.png" alt="image client">
                         <div class="description-client">
-                            <div class="etoiles">★★★★☆</div>
+                            <div class="etoiles">★★★★★</div>
                             <h4>Julien</h4>
                             <p>Portrait professionnel</p>
                         </div>
@@ -174,7 +185,7 @@
                     <div class="client">
                         <img src="assets/images/client-1.png" alt="image client">
                         <div class="description-client">
-                            <div class="etoiles">★★★★★</div>
+                            <div class="etoiles">★★★★☆</div>
                             <h4>Nadia</h4>
                             <p>Shooting famille</p>
                         </div>
@@ -185,38 +196,39 @@
     </main>
 
     <footer>
-        <section id="footer">
-        <div class="footer-gauche">
-            <div class="footer-intro">
-                <h2>Immortalisez vos moments !</h2>
-                <p>Pour toute demande ou projet, n’hésitez pas à me contacter.</p>
-            </div>
-            <div class="social-icons">
+        <section id="footer-container">
+            <div class="footer-gauche">
+                <div class="footer-intro">
+                    <h2>Immortalisez vos moments !</h2>
+                    <p>Pour toute demande ou projet, n’hésitez pas à me contacter.</p>
+                </div>
+                <div class="social-icons">
+                    <a class="social-links discord" href="https://discord.com" aria-label="Discord">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a class="social-links facebook" href="https://facebook.com" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="social-links dribbble" href="https://dribbble.com" aria-label="Dribbble">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                    <a class="social-links instagram" href="https://instagram.com" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="social-links behance" href="https://behance.net" aria-label="Behance">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                </div>
 
-                <a class="social-links" href="#">
-                    <img src="assets/icons/discord.png" alt="discord">
-                </a>
-                <a class="social-links" href="#">
-                    <img src="assets/icons/facebook.png" alt="facebook">
-                </a>
-                <a class="social-links" href="#">
-                    <img src="assets/icons/dribbble.png" alt="dribbble">
-                </a>
-                <a class="social-links" href="#">
-                    <img src="assets/icons/instagram.png" alt="instagram">
-                </a>
-                <a class="social-links" href="#">
-                    <img src="assets/icons/behance.png" alt="behance">
-                </a>
-                
             </div>
-        </div>
 
-        <div class="footer-droit">
-            <a class="contact-link" href="#">Réserver une séance</a>
-        </div>
-</section>
+            <div class="footer-droit">
+                <a class="contact-link" href="#">Réserver une séance</a>
+            </div>
+        </section>
     </footer>
+
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
 </html>

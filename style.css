@@ -1,13 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Quicksand:wght@300&display=swap');
 
-html,
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     margin: 0;
     background: #fbf9f5;
 }
 
 /*** NAVBAR  ***/
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
 
 a {
     text-decoration: none;
@@ -21,8 +27,8 @@ nav {
 }
 
 #logo img {
-    height: 56px;
-    width: 56px;
+    height: 60px;
+    width: 60px;
 }
 
 nav ul {
@@ -46,6 +52,7 @@ li a.active {
     font-weight: bold;
 }
 
+
 /*** NAVBAR ***/
 
 /*** MAIN ***/
@@ -53,7 +60,7 @@ li a.active {
 header {
     display: flex;
     flex-direction: row;
-    padding: 40px;
+    padding: 40px 100px;
     height: 70vh;
     align-items: center;
     justify-content: space-around;
@@ -61,21 +68,27 @@ header {
 
 .description-header {
     width: 60%;
+    height: 48vh;
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .description-header h3 {
     font-size: 25px;
-    margin: 12px 0px;
+    margin: 0;
 }
 
 .description-header h1 {
     font-size: 50px;
-    margin: 12px 0px;
     color: rgb(59, 58, 58);
+    margin: 0;
+}
+
+.description-header p {
+    margin: 0;
+    width: 44vw;
 }
 
 .contact-link {
@@ -83,7 +96,7 @@ header {
     text-decoration: none;
     background-color: white;
     color: rgb(59, 58, 58);
-    border-radius: 8px;
+    /* border-radius: 8px; */
     width: fit-content;
     height: fit-content;
     padding: 24px 32px;
@@ -111,33 +124,54 @@ header {
 #services-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
     padding: 64px 56px;
-}
-
-#services-container img {
-    width: 250px;
-    height: 300px;
-    border-radius: 10px;
+    gap: 30px;
 }
 
 .service-card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 24vw;
-    gap: 32px;
+    height: 70vh;
+    background: white;
+    /* border-radius: 10px; */
+    gap: 42px;
+    box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s;
+}
+
+.service-card:hover {
+    transform: scale(1.03);
+}
+
+.service-card img {
+    width: 100%;
+    height: 42vh;
+    object-fit: cover;
+}
+
+.service-image {
+    width: 100%;
+    height: 60%;
 }
 
 .description-service {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: justify;
-    /* margin-top: 20px; */
+    gap: 10px;
+    padding: 0px 20px;
+}
+
+.description-service h3 {
+    font-size: 18px;
+}
+
+.description-service h3,
+.description-service p {
+    margin: 0;
 }
 
 #galerie {
@@ -146,7 +180,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
     margin: 0;
-    padding: 0;
+    padding: 30px 0px;
     gap: 30px;
 }
 
@@ -155,6 +189,7 @@ header {
     justify-content: center;
     align-items: center;
     margin: 0;
+    font-size: xx-large;
 }
 
 .projets-container {
@@ -165,17 +200,15 @@ header {
     align-items: center;
     width: 80%;
     height: 70%;
+    gap: 30px;
 }
 
 .projet-card {
     display: flex;
     flex-direction: column;
-    width: 33%;
     height: fit-content;
     justify-content: center;
-    align-items: flex-start;
-    padding-bottom: 20px;
-
+    align-items: center;
 }
 
 .projet-card img {
@@ -209,6 +242,7 @@ header {
     flex-direction: column;
     width: fit-content;
     height: 8vh;
+    width: 24vw;
 }
 
 #temoignages {
@@ -216,19 +250,20 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 60px;
-    gap: 20px;
-    
+    padding: 50px;
+    gap: 40px;
 }
 
 #temoignages h2 {
     text-align: center;
+    margin: 0;
+    font-size: xx-large;
 }
 
 .temoignages-container {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 30px;
 }
 
 .temoignage-card {
@@ -238,9 +273,16 @@ header {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background: #f3f0ea;
-    border-radius: 10px;
-    padding: 0px 20px;
+    background: white;
+    /* border-radius: 10px; */
+    /* padding: 0px 20px; */
+    box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s;
+    gap: 20px;
+}
+
+.temoignage-card:hover {
+    transform: scale(1.03);
 }
 
 .client {
@@ -265,40 +307,51 @@ header {
     padding: 0;
 }
 
-.temoignage-card h5{
+.temoignage-card h5 {
     padding: 0px 24px;
     margin: 0;
 }
+
 /*** MAIN ***/
 
 /*** FOOTER ***/
 
-footer{
+footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 13px;
+    height: 26vh;
 }
 
-#footer{
+#footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 16vh;
+    height: 25vh;
     width: 80vw;
 }
 
 .footer-gauche {
     width: 60%;
-    padding-left:20px ;
+    padding-left: 20px;
+    height: 24vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-.footer-droit{
+.footer-droit {
     width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.footer-intro h2,
+.footer-intro p {
+    margin: 0;
 }
 
 .social-icons {
@@ -308,8 +361,31 @@ footer{
     width: 20vw;
 }
 
-.social-links{
-    width: 10px;
-    height: 10px;
+.social-links i {
+    font-size: 30px;
+    color: #222;
+    /* Couleur par défaut */
+    transition: color .4s;
 }
+
+.social-links.discord:hover i {
+    color: #5865F2;
+}
+
+.social-links.facebook:hover i {
+    color: #1877F2;
+}
+
+.social-links.dribbble:hover i {
+    color: #EA4C89;
+}
+
+.social-links.instagram:hover i {
+    color: #E4405F;
+}
+
+.social-links.behance:hover i {
+    color: #1769FF;
+}
+
 /*** FOOTER ***/

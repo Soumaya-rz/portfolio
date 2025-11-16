@@ -10,7 +10,7 @@ body {
 
 /*** NAVBAR  ***/
 
-h2{
+h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
 }
@@ -126,7 +126,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 50px 56px;
+    padding: 50px 56px 30px;
     gap: 30px;
 }
 
@@ -175,7 +175,8 @@ header {
     margin: 0;
 }
 
-#galerie {
+/* GALERIE SANS CARROUSEL */
+/* #galerie {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -191,7 +192,7 @@ header {
     align-items: center;
     margin: 0;
     font-size: xx-large;
-}
+} 
 
 .projets-container {
     display: flex;
@@ -210,7 +211,7 @@ header {
     height: fit-content;
     justify-content: center;
     align-items: center;
-}
+} 
 
 .projet-card img {
     width: 24vw;
@@ -229,7 +230,7 @@ header {
     align-items: flex-start;
 }
 
-.description-projet p{
+.description-projet p {
     font-size: 14px;
     font-weight: lighter;
 }
@@ -249,15 +250,91 @@ header {
     width: fit-content;
     height: 8vh;
     width: 24vw;
+} */
+
+#galerie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px 30px 0px;
+    gap: 10px;
+    background: #fbf9f5;
 }
+
+#galerie h2 {
+    margin: 0;
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.swiper.mySwiper {
+    width: 100%;
+    padding: 15px 0px 50px 0px;
+}
+
+.swiper.mySwiper .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px !important;
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.swiper.mySwiper .swiper-slide img {
+    display: block;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.swiper.mySwiper .description-projet {
+    margin-top: 15px;
+    background: transparent;
+    padding: 0;
+    text-align: center;
+    width: 300px;
+}
+
+.swiper.mySwiper .description-projet h4 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    color: rgb(59, 58, 58);
+    font-weight: 500;
+}
+
+.swiper.mySwiper .description-projet p {
+    margin: 0;
+    font-size: 13px;
+    color: rgb(59, 58, 58);
+    font-weight: 300;
+}
+
+.swiper-pagination-bullet {
+    background: #000 !important;
+    opacity: 0.3;
+}
+
+.swiper-pagination-bullet-active {
+    background: #000 !important;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet {
+    cursor: default !important;
+}
+
 
 #temoignages {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
-    gap: 40px;
+    padding: 30px;
+    gap: 30px;
 }
 
 #temoignages h2 {
@@ -280,8 +357,6 @@ header {
     justify-content: space-evenly;
     align-items: center;
     background: white;
-    /* border-radius: 10px; */
-    /* padding: 0px 20px; */
     box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.2);
     transition: transform 0.5s;
     gap: 20px;
